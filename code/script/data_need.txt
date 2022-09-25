@@ -1,0 +1,90 @@
+------------------------------------------------------------------------
+Level: *Undergraduate*
+College or School: *College of Arts and Sciences*
+Department or Program: *Africana Studies*
+Class Number: *6882*
+Grading: *A-E*
+Course Info: *AAFS 101 Intro to Africana Studies*
+Meeting Info: *TTH 04:30_PM-05:50_PM Humanities 024 Agum,David*
+Comments: **
+Credit Range: *3.0- 3.0*
+Component is blank if lecture: **
+Topic if applicable: **
+Seats remaining as of last update: *0*
+Session: *FULL*
+IT Commons: *N*
+Course Delivery Method: *INPERSON*
+General Education Course: *CHALLENGES*
+Honors College Course: *N*
+Writing Intensive: *N*
+Oral Discourse: *N*
+Info Literacy: *N*
+Special Restriction: *None*
+COIL - Collaborative Online International Learning: *NONE*
+OER - Open Educational Resources: *NONE*
+Course Description: *This course will introduce students to the
+historical foundations of Africana Studies and discuss its relevance to
+contemporary society. An interdisciplinary approach will be incorporated
+as History, Philosophy, Literature, Performing Arts, Sociology,
+Psychology, Religion/Spirituality, and Anthropology are employed to
+provide students a detailed analysis of people of African descent in the
+Western Hemisphere. *
+------------------------------------------------------------------------
+Level: *Undergraduate*
+College or School: *College of Arts and Sciences*
+Department or Program: *Africana Studies*
+Class Number: *9752*
+Grading: *A-E*
+Course Info: *AAFS 150 Life In The Third World*
+Meeting Info: *12:00_AM-12:00_AM Online Agum,David*
+Comments: *Fully Online (100%) - Asynchronous: describes forms of
+education, instruction, and learning that do not occur in the same place
+or same time.*
+Credit Range: *3.0- 3.0*
+Component is blank if lecture: **
+Topic if applicable: **
+Seats remaining as of last update: *0*
+Session: *8W2*
+IT Commons: *N*
+Course Delivery Method: *ONLASYNCH/ONLFULL*
+General Education Course: *INTLPER*
+Honors College Course: *N*
+Writing Intensive: *N*
+Oral Discourse: *N*
+Info Literacy: *N*
+Special Restriction: *None*
+COIL - Collaborative Online International Learning: *NONE*
+OER - Open Educational Resources: *NONE*
+Course Description: *Introduction to cultural variation and
+fragmentation among third-world developing communities. Some lectures
+and discussions are led by third-world graduate students. Whenever
+possible, distinguished visitors from third-world countries are also
+involved in the course. *
+------------------------------------------------------------------------
+
+*Level: Undergraduate
+College or School: College of Engineering and Applied Sciences
+*Department or Program: Computer Science
+*Class Number: 3856
+Grading: A-E
+*Course Info: ICSI 201 Intro Comp Sci
+*Meeting Info: TTH 09:00_AM-10:20_AM Campus Center Auditorium Zheleva,Mariya
+*Comments: Students registering for this section must FIRST register for a Lab: 3857-3861, 4375
+*Credit Range: 4.0- 4.0
+*Component is blank if lecture:
+Topic if applicable:
+*Seats remaining as of last update: 7
+*Session: FULL
+IT Commons: Y
+*Course Delivery Method: INPERSON
+*General Education Course: NONE
+Honors College Course: N
+Writing Intensive: N
+Oral Discourse: N
+Info Literacy: N
+*Special Restriction: None
+COIL - Collaborative Online International Learning: NONE
+OER - Open Educational Resources: NONE
+Course Description: (Formerly I ECE/I CEN/I CSI 201.) This course first introduces with the elementary concepts of computer science such as CPU, memory, I/O devices and binary number system. It then focuses on developing basic programming skills. The topics include input and output data, data types, control structures, functions/methods, arrays, procedural and object-oriented programming concepts, and program debugging and compilation. Only one of I CEN/I CSI/I ECE 201 may be taken for credit. Prerequisites: no prerequisite; general mathematical knowledge and computer skills are recommended.
+
+
