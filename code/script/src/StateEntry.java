@@ -24,23 +24,19 @@ public class StateEntry {
             while (fileReader.hasNextLine()){
                 String data = fileReader.nextLine();
 
-//                String[] split = data.split(":");
-//                if(split.length > 1){
-//                    System.out.println(data);
-//                    System.out.println(split[1].substring(2,split[1].length()-1));
-//                }
-                //System.out.println(data);
-
                 this.state = stateMachine.GetState(state,data,this.classDatatype);
 
-                if(this.state == 1){
+                if((this.state == 1)){
+                    if (!this.classDatatype.getLevel().equalsIgnoreCase("")) {
+                        //System.out.println(this.classDatatype.getLevel().equalsIgnoreCase(""));
 
-                    //output the class data to database
-                    System.out.println(this.classDatatype.toString());
-
+                        //output the class data to database
+                        System.out.println(this.classDatatype.toString()); //right now just output to shell
+                    }
 
                     //new class data
                     this.state = stateMachine.GetState(state,null,classDatatype);
+
                 }
 
 
