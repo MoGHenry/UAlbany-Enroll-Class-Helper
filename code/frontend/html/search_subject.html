@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Autocomplete Search Box | CodingNepal</title>
-    <link rel="stylesheet" href="search_subject_style.css">
+    <link rel="stylesheet" href="../css/search_subject_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         let ICSI = "Computer Science";
@@ -19,16 +19,25 @@
     </script>
 </head>
 <body>
+
 <div class="wrapper">
     <div class="search-input">
-        <a href="" target="_blank" hidden></a>
-        <input type="text" placeholder='Enter "subject" here..'>
+        <form action="./search_result.html" method="get" target="_blank">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder='Enter "subject" here..'>
+            <div class="autocom-box">
+                <!-- JS inserts list here -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+        </form>
+
         <div class="autocom-box">
             <!-- JS inserts list here -->
         </div>
         <div class="icon"><i class="fas fa-search"></i></div>
     </div>
 </div>
+
 <div class="top-searches">
 <!--    TODO show a list of hot search by record the search times-->
     <input type="button" onclick="" value="" id = "button1">
@@ -228,8 +237,8 @@
     </form>
 </div>
 
-<script src="suggestions.js"></script>
-<script src="script.js"></script>
+<script src="../javascript/suggestions.js"></script>
+<script src="../javascript/search_bar_script.js"></script>
 
 </body>
 </html>
