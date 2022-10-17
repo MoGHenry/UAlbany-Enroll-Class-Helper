@@ -81,7 +81,7 @@ public void sent (ClassDatatype course) throws SQLException {
 	String description = course.getCourseDescription();//18
 	String other = course.getOther();//19
 	
-	/*
+/*
 	System.out.println(courseSubject);
 	System.out.println(catalogNumber);
 	System.out.println(courseName);
@@ -101,7 +101,7 @@ public void sent (ClassDatatype course) throws SQLException {
 	System.out.println(specialRestriction);
 	System.out.println(description);
 	System.out.println(other);
-	*/
+*/
 			
 	String sql="INSERT INTO courses VALUES ('"+courseSubject+"','"+catalogNumber+"','"+classNumber+"','"+courseName+"','"+department
 			+"','"+level+"','"+meetingTime+"','"+meetingLocation+"','"+preRequest+"','"+labRequest
