@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hEUw34qic+R9pzFCYv1ynjcsg18jTAxNriwM5T1YRWhqgRCd1FiXosq/n/pkJa6dh16yLpFDXARVeSDi4TjD+A==",
+  "dgSpecHash": "3ZNn0g2J25XBchRwANh8hCOmCqr4zplMM1oOzpSxoMnLb/6nNiJ8k6VZtdI7iDIbhbusi3BVsvL1EELi0xj/9g==",
   "success": true,
   "projectFilePath": "D:\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -56,7 +56,7 @@
     "C:\\Users\\16507\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.2\\microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
     "C:\\Users\\16507\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\16507\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\16507\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\16507\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\16507\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\16507\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\16507\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
