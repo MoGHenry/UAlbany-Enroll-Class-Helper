@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/class_description.css">
+</head>
 <body>
 
 <h1> Search Result</h1>
 
-<div class="class-div" name="class-div-name">
-
+<div class="class-div" id="class-div">
+<!--search_result.js add code here-->
 </div>
 
+<div class="class-description" id="class-description">
+<!--class_description.js add code here-->
+</div>
+
+<script type="text/javascript" src="../javascript/search_result.js"></script>
+<script type="text/javascript" src="../javascript/class_description.js"></script>
+<script type="text/javascript" src="../javascript/close_description.js"></script>
+
+<!--json test-->
 <script>
-    let text = '{"employees":[' +
-        '{"firstName":"John","lastName":"Doe" },' +
-        '{"firstName":"Anna","lastName":"Smith" },' +
-        '{"firstName":"Peter","lastName":"Jones" }]}';
+    const text = {
+        "id": 0,
+        "number": 2,
+        "value": "[{\"level\":\"Undergraduate\",\"department\":\"Africana Studies\",\"classNumber\":6882,\"courseInfo\":\"AAFS 101 Intro to Africana Studies\",\"meetingTime\":\"TTH 04:30_PM-05:50_PM\",\"meetingLocation\":\"Humanities 024 Agum,David\",\"prerequest\":\"\",\"labrequest\":\"\",\"creditRange\":\"3.0- 3.0\",\"classType\":\"\",\"seatsRemain\":0,\"session\":\"FULL\",\"courseDelivery\":\"INPERSON\",\"genEd\":\"CHALLENGES\",\"specialRestriction\":\"None\",\"description\":\"This course will introduce students to the historical foundations of Africana Studies and discuss its relevance to contemporary society. An interdisciplinary approach will be incorporated as History, Philosophy, Literature, Performing Arts, Sociology, Psychology, Religion/Spirituality, and Anthropology are employed to provide students a detailed analysis of people of African descent in the Western Hemisphere. \",\"other\":\"\"},{\"level\":\"Undergraduate\",\"department\":\"Africana Studies\",\"classNumber\":9752,\"courseInfo\":\"AAFS 150 Life In The Third World\",\"meetingTime\":\"12:00_AM-12:00_AM\",\"meetingLocation\":\"Online Agum,David\",\"prerequest\":\"\",\"labrequest\":\"\",\"creditRange\":\"3.0- 3.0\",\"classType\":\"\",\"seatsRemain\":0,\"session\":\"8W2\",\"courseDelivery\":\"ONLASYNCH/ONLFULL\",\"genEd\":\"INTLPER\",\"specialRestriction\":\"None\",\"description\":\"Introduction to cultural variation and fragmentation among third-world developing communities. Some lectures and discussions are led by third-world graduate students. Whenever possible, distinguished visitors from third-world countries are also involved in the course.\",\"other\":\"\"}]"
+    }
 
-    let text2 = '{"class1": [{"id":1,"level":"Undergraduate","department":"Africana Studies","classNumber":6882,"courseInfo":"AAFS 101 Intro to Africana Studies","meetingTime":"TTH 04:30_PM-05:50_PM","meetingLocation":"Humanities 024 Agum,David","prerequest":"","labrequest":"","creditRange":"3.0- 3.0","classType":"","seatsRemain":0,"session":"FULL","courseDelivery":"INPERSON","genEd":"CHALLENGES","specialRestriction":"None","description":"This course will introduce students to the historical foundations of Africana Studies and discuss its relevance to contemporary society. An interdisciplinary approach will be incorporated as History, Philosophy, Literature, Performing Arts, Sociology, Psychology, Religion/Spirituality, and Anthropology are employed to provide students a detailed analysis of people of African descent in the Western Hemisphere. ","other":""},{"id":4,"level":"Undergraduate","department":"Africana Studies","classNumber":9752,"courseInfo":"AAFS 150 Life In The Third World","meetingTime":"12:00_AM-12:00_AM","meetingLocation":"Online Agum,David","prerequest":"","labrequest":"","creditRange":"3.0- 3.0","classType":"","seatsRemain":0,"session":"8W2","courseDelivery":"ONLASYNCH/ONLFULL","genEd":"INTLPER","specialRestriction":"None","description":"Introduction to cultural variation and fragmentation among third-world developing communities. Some lectures and discussions are led by third-world graduate students. Whenever possible, distinguished visitors from third-world countries are also involved in the course.","other":""}]}';
-
-    const obj = JSON.parse(text);
-    document.getElementById("demo").innerHTML =
-        obj.employees[1].firstName + " " + obj.employees[1].lastName;
-    const obj2 = JSON.parse(text2);
-    document.getElementById("demo2").innerHTML =
-        obj2.class1[1].department;
-
-</script>
-
-
-
-<script type="text/javascript" src="../javascript/search_result.js">
-    
+    const person = {
+        "name": "Ram",
+        "age": 27,
+        "vehicles": {
+            "car": "limousine",
+            "bike": "ktm-duke",
+            "plane": "lufthansa"
+        }
+    };
+    const num = text.number;
+    const val = text.value;
+    const json = JSON.parse(val);
 </script>
 
 </body>
