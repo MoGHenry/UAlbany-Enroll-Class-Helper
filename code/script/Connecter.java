@@ -78,7 +78,7 @@ public void sent (ClassDatatype course) throws SQLException {
 	temporary=course.getComments();
 	//System.out.println("check point 3");
 	//10
-	if(temporary.toLowerCase().indexOf("first register for a")>=0)
+	if(temporary.toLowerCase().indexOf("first register for")>=0)
 	 labRequest = "yes";
 	else labRequest="no";
 	//System.out.println("check point 4");
