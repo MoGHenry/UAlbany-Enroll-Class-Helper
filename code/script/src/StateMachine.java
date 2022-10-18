@@ -28,7 +28,16 @@ public class StateMachine {
                 return 1;
             }
 
-            String[] split = input.split(":");
+            String[] spiltTital = input.split(":");
+            String[] split = new String[2];
+            split[0] = spiltTital[0];
+            split[1] = spiltTital[1];
+            if(spiltTital.length > 2){
+                for (int i = 2; i < spiltTital.length; i++) {
+                    split[1] = split[1] + ":" + spiltTital[i];
+                }
+            }
+
             if(split[0].equalsIgnoreCase("Level")){
                 return GetState(3,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Department or Program")){
@@ -232,10 +241,10 @@ public class StateMachine {
 
         }else if(state == 17){ //other
             if(input.substring(input.length()-1).equalsIgnoreCase("*")){
-                classDatatype.setOther(classDatatype.getOther() + input + ";");
+//                classDatatype.setOther(classDatatype.getOther() + input + ";");
                 return 2;
             }else{
-                classDatatype.setOther(classDatatype.getOther() + input);
+//                classDatatype.setOther(classDatatype.getOther() + input);
                 return 17;
             }
 

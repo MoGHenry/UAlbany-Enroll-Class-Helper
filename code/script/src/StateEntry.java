@@ -18,6 +18,10 @@ public class StateEntry {
         this.classDatatype = new ClassDatatype();
         this.stateMachine = new StateMachine();
         this.connecter = new Connecter();
+        try{
+            this.connecter.showDatabase();
+        }catch(SQLException e){}
+
         start();
     }
 
@@ -28,6 +32,7 @@ public class StateEntry {
                 String data = fileReader.nextLine();
 
                 this.state = stateMachine.GetState(state,data,this.classDatatype);
+                this.classDatatype.setOther("");
 
                 if((this.state == 1)){
                     if (!this.classDatatype.getLevel().equalsIgnoreCase("")) {
@@ -35,12 +40,14 @@ public class StateEntry {
 
                         //output the class data to database
 //                        System.out.println(this.classDatatype.toString()); //right now just output to shell
+//                        if(this.classDatatype.getClassNumber().equalsIgnoreCase("5350")){
+//                            while(true){}
+//                        }
                         try{
                             this.connecter.sent(this.classDatatype);
                         }catch(SQLException e){}
-
+                        this.classDatatype = new ClassDatatype();
                     }
-
                     //new class data
                     this.state = stateMachine.GetState(state,null,classDatatype);
 
