@@ -3,38 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>UAlbany Enroll Class Helper</title>
-    <style>
-        body {
-            background-image: url('/code/frontend/Pic/ualbany_picture.jpg');
-            background-size: 2300px;
-        }
-
-        .No_need_Guild_User, .Need_Guild_User {
-            background-color: blueviolet;
-            color: white;
-            width: 350px;
-            height: 350px;
-            border-radius: 130px;
-            font-size: 40px;
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="/code/frontend/Pic/favicon.ico">
+    <link rel="stylesheet" href="./code/frontend/css/index.css">
 </head>
 <body>
+<div id="background-pic">
+    <img src="./code/frontend/Pic/ualbany_picture.jpg" width="100%"></img>
+</div>
 <div class="div1">
+    <div id="title">
+        <p> UAlbany Enroll Helper</p>
+    </div>
+
     <div>
-        <table cellspacing="50" style="margin-left:auto;margin-right:auto;margin-top: 15%;">
-            <caption style="font-size: 60px; color: White; font-width: bold"> Do you need Guild?</caption>
+        <table cellspacing="50">
             <tr>
                 <td>
-                    <button class="Need_Guild_User"
-                            onclick="location.href='code/frontend/html/Need_Guild_Page1.html'">
-                        Need
+                    <button class="Normal_User" onclick="location.href='code/frontend/html/search_subject.html'">
+                        Search Subject
                     </button>
                 </td>
                 <td>
-                    <button class="No_need_Guild_User"
-                            onclick="location.href='code/frontend/html/search_subject.html'">
-                        No Need
+                    <button class="Freshman_User" onclick="location.href='code/frontend/html/Need_Guild_Page1.html'">
+                        Freshman Guide
                     </button>
                 </td>
             </tr>

@@ -1,18 +1,50 @@
-function show_description(class_json)
+
+function show_description(id)
 {
+    const val = id_description[id];
+    addModal();
+
+    let modal = document.getElementsByClassName('modal')[0];
+    modal.id = id;
+
+    const btn_close_1 = document.getElementById('btn-close-1');
+    const btn_close_2 = document.getElementById('btn-close-2');
+    const btn_remove = document.getElementById('btn-remove');
+    const btn_add = document.getElementById('btn-add');
+
+
+    modal.style.display = "block";
+
+    btn_close_1.onclick = function(){
+        modal.style.display = "none";
+    }
 
     btn_close_2.onclick = function (){
         modal.style.display = "none";
     }
 
+    // TODO add message box when add or remove class
+    btn_remove.onclick = function (){
+        if(id in selected_id_time) {
+            delete selected_id_time[id];
+            alert("Remove successful");
+        }
+        else
+            alert("This class is not in your cart");
+    }
     btn_add.onclick = function (){
-        modal.style.display = "none";
-        // TODO add to cart
+        if(!(id in selected_id_time)) {
+            selected_id_time[id] = val;
+            alert("Add Successful");
+        }
+        else{
+            alert('You have already added this class to the Cart');
+        }
     }
 }
 
 function addModal() {
-    document.getElementById('class-description').innerHTML += '' +
+    document.getElementById('class-description').innerHTML = '' +
         '<!-- The Modal -->\n' +
         '<div id="modal" class="modal">\n' +
         '\n' +
@@ -116,6 +148,7 @@ function addModal() {
         '    </div>\n' +
         '    <div class="modal-footer">\n' +
         '      <button type="button" id="btn-close-2" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>\n' +
+        '      <button type="button" id="btn-remove" class="btn btn-secondary" data-bs-dismiss="modal">Remove from Cart</button>\n' +
         '      <button type="button" id="btn-add" class="btn btn-primary">Add to Cart</button>\n' +
         '    </div>\n' +
         '\n' +
