@@ -27,6 +27,7 @@ function show_description(id)
     btn_remove.onclick = function (){
         if(id in selected_id_time) {
             delete selected_id_time[id];
+            document.getElementById('hide-cart-item').value=selected_id_time;
             alert("Remove successful");
         }
         else
@@ -35,6 +36,7 @@ function show_description(id)
     btn_add.onclick = function (){
         if(!(id in selected_id_time)) {
             selected_id_time[id] = val;
+            document.getElementById('hide-cart-item').value=selected_id_time;
             alert("Add Successful");
         }
         else{
