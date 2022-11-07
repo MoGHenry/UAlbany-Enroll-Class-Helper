@@ -24,9 +24,16 @@ public class StateMachine {
 
         }else if(state == 2){
 
+         try {
             if(input.substring(0,1).equalsIgnoreCase("-")){
                 return 1;
             }
+        	}
+        	catch(StringIndexOutOfBoundsException e) {
+        		
+        		return 0;
+        		
+        	}
 
             String[] spiltTital = input.split(":");
             String[] split = new String[2];
