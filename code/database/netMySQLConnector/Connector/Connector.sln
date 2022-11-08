@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector", "Connector\Connector.csproj", "{2E3F5962-DDBE-46D3-8DB3-DEC4F4D41B7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E3F5962-DDBE-46D3-8DB3-DEC4F4D41B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3F5962-DDBE-46D3-8DB3-DEC4F4D41B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3F5962-DDBE-46D3-8DB3-DEC4F4D41B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3F5962-DDBE-46D3-8DB3-DEC4F4D41B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D9F5DB9-BB82-4D91-B477-532456FB54AF}
+	EndGlobalSection
+EndGlobal
