@@ -43,6 +43,7 @@ public class StateEntry {
 //                        if(this.classDatatype.getClassNumber().equalsIgnoreCase("5350")){
 //                            while(true){}
 //                        }
+//                        System.out.println(this.classDatatype.toString());
                         try{
                             this.connecter.sent(this.classDatatype);
                         }catch(SQLException e){}

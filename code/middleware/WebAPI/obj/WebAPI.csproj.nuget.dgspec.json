@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\16507\\Desktop\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "D:\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\16507\\Desktop\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\16507\\Desktop\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "D:\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\16507\\Desktop\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\16507\\.nuget\\packages\\",
-        "outputPath": "D:\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\16507\\Desktop\\cs\\UAlbany-Enroll-Class-Helper\\code\\middleware\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

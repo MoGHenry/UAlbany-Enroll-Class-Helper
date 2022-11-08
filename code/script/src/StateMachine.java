@@ -31,14 +31,18 @@ public class StateMachine {
         	}
         	catch(StringIndexOutOfBoundsException e) {
         		
-        		return 0;
+        		return 1;
         		
         	}
 
             String[] spiltTital = input.split(":");
             String[] split = new String[2];
             split[0] = spiltTital[0];
-            split[1] = spiltTital[1];
+            split[1] = " ";
+            if(spiltTital.length > 1){
+                split[1] = spiltTital[1];
+            }
+
             if(spiltTital.length > 2){
                 for (int i = 2; i < spiltTital.length; i++) {
                     split[1] = split[1] + ":" + spiltTital[i];
@@ -46,39 +50,69 @@ public class StateMachine {
             }
 
             if(split[0].equalsIgnoreCase("Level")){
-                return GetState(3,split[1],classDatatype);
+                classDatatype.setLevel(split[1]);
+                return 2;
+                //return GetState(3,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Department or Program")){
-                return GetState(4,split[1],classDatatype);
+                classDatatype.setDepartmentOrProgram(split[1]);
+                return 2;
+//                return GetState(4,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Class Number")){
-                return GetState(5,split[1],classDatatype);
+                classDatatype.setClassNumber(split[1]);
+                return 2;
+//                return GetState(5,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Course Info")){
-                return GetState(6,split[1],classDatatype);
+                classDatatype.setCourseInfo(split[1]);
+                return 2;
+//                return GetState(6,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Meeting Info")){
-                return GetState(7,input.substring(13),classDatatype);
+                classDatatype.setMeetingInfo(split[1]);
+                return 2;
+//                return GetState(7,input.substring(13),classDatatype);
             }else if(split[0].equalsIgnoreCase("Comments")){
-                return GetState(8,split[1],classDatatype);
+                classDatatype.setComments(split[1]);
+                return 2;
+//                return GetState(8,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Credit Range")){
-                return GetState(9,split[1],classDatatype);
+                classDatatype.setCreditRange(split[1]);
+                return 2;
+//                return GetState(9,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Component is blank if lecture")){
-                return GetState(10,split[1],classDatatype);
+                classDatatype.setComponentIsBlankIfLecture(split[1]);
+                return 2;
+//                return GetState(10,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Seats remaining as of last update")){
-                return GetState(11,split[1],classDatatype);
+                classDatatype.setSeatsRemainingAsOfLastUpdate(split[1]);
+                return 2;
+//                return GetState(11,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Session")){
-                return GetState(12,split[1],classDatatype);
+                classDatatype.setSession(split[1]);
+                return 2;
+//                return GetState(12,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Course Delivery Method")){
-                return GetState(13,split[1],classDatatype);
+                classDatatype.setCourseDeliveryMethod(split[1]);
+                return 2;
+//                return GetState(13,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("General Education Course")){
-                return GetState(14,split[1],classDatatype);
+                classDatatype.setGeneralEducationCourse(split[1]);
+                return 2;
+//                return GetState(14,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Special Restriction")){
-                return GetState(15,split[1],classDatatype);
+                classDatatype.setSpecialRestriction(split[1]);
+                return 2;
+//                return GetState(15,split[1],classDatatype);
             }else if(split[0].equalsIgnoreCase("Course Description")){
-                return GetState(16,split[1],classDatatype);
+                classDatatype.setCourseDescription(split[1]);
+                return 2;
+//                return GetState(16,split[1],classDatatype);
             }else{
-                return GetState(17,input,classDatatype);
+                return 2;
+//                return GetState(17,input,classDatatype);
             }
 
 
         }else if(state == 3){ //Level
+
             if(input.substring(input.length()-1).equalsIgnoreCase("*") && input.substring(1,2).equalsIgnoreCase("*")){
                 classDatatype.setLevel(input.substring(2,input.length()-1));
                 return 2;
