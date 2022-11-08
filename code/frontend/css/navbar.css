@@ -1,0 +1,36 @@
+.nav-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #00FFFF;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#cart-div{
+    float:right;
+    /*position: fixed;*/
+    /*right: 20px;*/
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    /*float: left;*/
+    display: inline-block;
+    margin-left: 70px;
+}
