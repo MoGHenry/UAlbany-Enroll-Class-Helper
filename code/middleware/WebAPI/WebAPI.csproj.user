@@ -10,5 +10,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>WebAPI.Models.TodoContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <NameOfLastUsedPublishProfile>D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\Properties\PublishProfiles\WebAPI20221031145639 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

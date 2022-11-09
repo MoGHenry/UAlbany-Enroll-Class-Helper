@@ -17,6 +17,8 @@ namespace WebAPI
 {
     public class Startup
     {
+
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,6 +29,18 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                                  policy =>
+                                  {
+                                      policy.WithOrigins("http://localhost:63342",
+                                                          "https://moghenry.github.io")
+                                      .AllowAnyHeader()
+                                      .AllowAnyMethod(); 
+                                  });
+            });
+
             services.AddControllers();
 
             services.AddDbContext<TodoContext>(opt =>
@@ -40,6 +54,9 @@ namespace WebAPI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -49,12 +66,16 @@ namespace WebAPI
 
             app.UseRouting();
 
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            
         }
     }
 }
