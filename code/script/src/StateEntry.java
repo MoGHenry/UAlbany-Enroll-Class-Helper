@@ -2,6 +2,7 @@ import datatype.ClassDatatype;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class StateEntry {
@@ -9,12 +10,18 @@ public class StateEntry {
     private int state;
     private ClassDatatype classDatatype;
     private StateMachine stateMachine;
+    private Connecter connecter;
 
     public StateEntry(File file) {
         this.file = file;
         this.state = 0;
         this.classDatatype = new ClassDatatype();
         this.stateMachine = new StateMachine();
+        this.connecter = new Connecter();
+        try{
+            this.connecter.showDatabase();
+        }catch(SQLException e){}
+
         start();
     }
 
@@ -24,29 +31,38 @@ public class StateEntry {
             while (fileReader.hasNextLine()){
                 String data = fileReader.nextLine();
 
-//                String[] split = data.split(":");
-//                if(split.length > 1){
-//                    System.out.println(data);
-//                    System.out.println(split[1].substring(2,split[1].length()-1));
-//                }
-                //System.out.println(data);
-
                 this.state = stateMachine.GetState(state,data,this.classDatatype);
+                this.classDatatype.setOther("");
 
-                if(this.state == 1){
+                if((this.state == 1)){
+                    if (!this.classDatatype.getLevel().equalsIgnoreCase("")) {
+                        //System.out.println(this.classDatatype.getLevel().equalsIgnoreCase(""));
 
-                    //output the class data to database
-                    System.out.println(this.classDatatype.toString());
-
-
+                        //output the class data to database
+//                        System.out.println(this.classDatatype.toString()); //right now just output to shell
+//                        if(this.classDatatype.getClassNumber().equalsIgnoreCase("5350")){
+//                            while(true){}
+//                        }
+//                        System.out.println(this.classDatatype.toString());
+                        try{
+                            this.connecter.sent(this.classDatatype);
+                        }catch(SQLException e){}
+                        this.classDatatype = new ClassDatatype();
+                    }
                     //new class data
                     this.state = stateMachine.GetState(state,null,classDatatype);
+
                 }
 
 
             }
 
             fileReader.close();
+            try{
+                this.connecter.showDatabase();
+                this.connecter.closeConnecter();
+            }catch(SQLException e){}
+
         }catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
