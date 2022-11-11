@@ -1,6 +1,6 @@
 document.getElementById('header').innerHTML+= "" +
     "<div id=\"cart-div\">\n" +
-    "        <form action=\"./cart.html\" method=\"post\">\n" +
+    "        <form action=\"./cart.html\" >\n" +
     "            <input id=\"hide-cart-item\" type=\"text\" name=\"cart-item\" value=\"\"\n" +
     "                   style=\"display: none;\">\n" +
     "            <input type=\"image\" src=\"../Pic/shopping-cart.png\" alt=\"Submit\" width=\"48\"\n" +
