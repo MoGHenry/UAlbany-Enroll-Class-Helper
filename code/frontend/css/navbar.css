@@ -1,10 +1,21 @@
-.nav-container{
-    width: 80%;
-    margin: 0 auto;
+/*.nav-container{*/
+/*    !*width: 80%;*!*/
+/*    margin: 0 auto;*/
+/*}*/
+
+body{
+    padding: 0 0 0;
+    margin: 0;
 }
 
 header{
-    background-color: #00FFFF;
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left:0;*/
+    /*right:0;*/
+    position: sticky;
+    top:0;
+    background-color: rgb(88, 55, 208);
 }
 
 header::after{
@@ -17,6 +28,8 @@ header::after{
     float:right;
     /*position: fixed;*/
     /*right: 20px;*/
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 nav{
@@ -24,13 +37,53 @@ nav{
 }
 
 nav ul{
-    margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 0;
 }
 
 nav li{
     /*float: left;*/
+    position: relative;
     display: inline-block;
     margin-left: 70px;
+    padding-top: 20px;
+}
+
+nav a{
+    color: rgba(255, 255, 255, 0.84);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    padding-top: 20px;
+}
+
+nav a:hover{
+    color: gray;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: blue;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+#title-p{
+    float:left;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 20px;
+    margin: 15px 0;
 }

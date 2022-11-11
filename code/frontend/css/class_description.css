@@ -38,3 +38,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
     text-decoration: none;
     cursor: pointer;
 }
+
+.p-2{
+    border-radius: 15px;
+}
+
+.p-2:hover{
+    background: blue;
+}

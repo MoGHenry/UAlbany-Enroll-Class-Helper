@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <title>UAlbany Enroll Class Helper</title>
     <link rel="icon" type="image/x-icon" href="./code/frontend/Pic/favicon.ico">
+    <link rel="stylesheet" href="./code/frontend/css/navbar.css">
     <link rel="stylesheet" href="./code/frontend/css/index.css">
 <!--    <script data-main="scripts/app" src="https://requirejs.org/docs/release/2.3.6/comments/require.js"></script>-->
 </head>
 <body>
+
+<header>
+
+    <div id="cart-div">
+        <form action="./code/frontend/html/cart.html" method="post">
+            <input id="hide-cart-item" type="text" name="cart-item" value=""
+                   style="display: none;">
+            <input type="image" src="./code/frontend/Pic/shopping-cart.png" alt="Submit" width="48"
+                   height="48">
+        </form>
+    </div>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <!--                <li><img src="./../Pic/cat.jpg" style="display: inline-block;"></li>-->
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./code/frontend/html/search_result.html">Search Subject</a></li>
+                <li><a href="./code/frontend/html/cart.html">Schedule Planner</a></li>
+
+            </ul>
+        </nav>
+
+    </div>
+    <script>
+        console.log(window.location.pathname);
+    </script>
+</header>
+
+
 <div id="background-pic">
     <img src="./code/frontend/Pic/ualbany_picture.jpg" width="100%"></img>
 </div>

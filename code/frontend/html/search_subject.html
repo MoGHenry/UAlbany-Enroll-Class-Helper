@@ -2,10 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>Autocomplete Search Box | CodingNepal</title>
+    <title>Search Subject</title>
     <link rel="icon" type="image/x-icon" href="../../../code/frontend/Pic/favicon.ico">
-    <link rel="stylesheet" href="../css/search_subject_style.css">
+    <link rel="stylesheet" href="../css/search_subject.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
     <script>
         let ICSI = "Computer Science";
         let APHY = "Physics";
@@ -21,16 +22,20 @@
 </head>
 <body>
 
+<header id="header"></header>
+<script src="../javascript/navbar.js"></script>
+
+
 <div class="wrapper">
     <div class="search-input">
         <form action="./search_result.html" method="get" target="_blank">
             <a href="" target="_blank" hidden></a>
-            <input type="text" placeholder='Enter "subject" here..'>
+            <input type="text" placeholder='Enter "subject" here..' id="placeholder">
             <div class="autocom-box">
                 <!-- JS inserts list here -->
             </div>
             <div class="icon"><i class="fas fa-search"></i></div>
-            <input type="submit" value="search">
+            <input type="submit" value="search" id="search-button">
         </form>
 
         <div class="autocom-box">
@@ -38,37 +43,38 @@
         </div>
         <div class="icon"><i class="fas fa-search"></i></div>
     </div>
+
+    <div class="top-searches">
+        <!--    TODO show a list of hot search by record the search times-->
+        <input type="button" onclick="" value="" id = "button1">
+        <input type="button" onclick="" value="" id = "button2">
+        <input type="button" onclick="" value="" id = "button3">
+        <input type="button" onclick="" value="" id = "button4">
+        <input type="button" onclick="" value="" id = "button5">
+        <input type="button" onclick="" value="" id = "button6">
+        <input type="button" onclick="" value="" id = "button7">
+        <input type="button" onclick="" value="" id = "button8">
+        <input type="button" onclick="" value="" id = "button9">
+        <script >
+            document.getElementById("button1").value = ICSI;
+            document.getElementById("button2").value = APHY;
+            document.getElementById("button3").value = AMAT;
+            document.getElementById("button4").value = ACHM;
+            document.getElementById("button5").value = BBUS;
+            document.getElementById("button6").value = ACOM;
+            document.getElementById("button7").value = AECO;
+            document.getElementById("button8").value = IECE;
+            document.getElementById("button9").value = AENG;
+        </script>
+    </div>
+
 </div>
 
-<div class="top-searches">
-<!--    TODO show a list of hot search by record the search times-->
-    <input type="button" onclick="" value="" id = "button1">
-    <input type="button" onclick="" value="" id = "button2">
-    <input type="button" onclick="" value="" id = "button3">
-    <input type="button" onclick="" value="" id = "button4">
-    <input type="button" onclick="" value="" id = "button5">
-    <input type="button" onclick="" value="" id = "button6">
-    <input type="button" onclick="" value="" id = "button7">
-    <input type="button" onclick="" value="" id = "button8">
-    <input type="button" onclick="" value="" id = "button9">
-    <input type="button" onclick="" value="" id = "button10">
-    <script >
-        document.getElementById("button1").value = ICSI;
-        document.getElementById("button2").value = APHY;
-        document.getElementById("button3").value = AMAT;
-        document.getElementById("button4").value = ACHM;
-        document.getElementById("button5").value = BBUS;
-        document.getElementById("button6").value = ACOM;
-        document.getElementById("button7").value = AECO;
-        document.getElementById("button8").value = IECE;
-        document.getElementById("button9").value = AENG;
-        document.getElementById("button10").value = AHIS;
-    </script>
+<div id="advance-search-div" style="margin: auto; width: 30%;/*border: 5px solid #FFFF00;*/padding: 10px;">
+<div class="advance-search-button" style="text-align: center;">
+    <button type="button" class="or-line">Advanced Search</button>
 </div>
-<div class="or-section">
-    <p class="or-line">--- Or ---</p>
-</div>
-<div class="advance-search">
+<div class="advance-search" style="display: none; align-content: center;border: 3px solid #FFFF00; padding: 10px;">
     <form>
         <div>
             <label for="meeting-start-time">Meeting Start Time</label>
@@ -238,9 +244,18 @@
         </div>
     </form>
 </div>
+</div>
 
 <script src="../javascript/suggestions.js"></script>
 <script src="../javascript/search_bar_script.js"></script>
+<script type="text/javascript">
+    document.getElementsByClassName('advance-search-button')[0].onclick = function(){
+        if(document.getElementsByClassName('advance-search')[0].style.display==="none")
+            document.getElementsByClassName('advance-search')[0].style.display="block";
+        else
+            document.getElementsByClassName('advance-search')[0].style.display="none";
+    }
+</script>
 
 </body>
 </html>

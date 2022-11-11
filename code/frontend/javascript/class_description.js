@@ -25,18 +25,17 @@ function show_description(id)
 
     // TODO add message box when add or remove class
     btn_remove.onclick = function (){
-        if(id in selected_id_time) {
-            delete selected_id_time[id];
-            document.getElementById('hide-cart-item').value=selected_id_time;
+        if(id in localStorage) {
+            localStorage.removeItem(id);
             alert("Remove successful");
         }
         else
             alert("This class is not in your cart");
     }
     btn_add.onclick = function (){
-        if(!(id in selected_id_time)) {
-            selected_id_time[id] = val;
-            document.getElementById('hide-cart-item').value=selected_id_time;
+        if(!(id in localStorage)) {
+            localStorage.setItem(id, JSON.stringify(val));
+            console.log(localStorage.key(0));
             alert("Add Successful");
         }
         else{

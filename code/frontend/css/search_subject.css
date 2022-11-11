@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #a387e5;
+    background: #7743db;
     padding: 0 20px;
 }
 
@@ -17,7 +17,7 @@ body{
 
 .wrapper{
     max-width: 450px;
-    margin: 150px auto;
+    margin: 100px auto;
 }
 
 .wrapper .search-input{
@@ -26,6 +26,24 @@ body{
     border-radius: 5px;
     position: relative;
     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.top-searches{
+    margin-top: 30px;
+}
+
+.top-searches input{
+    margin: 5px 1%;
+    align-content: center;
+    padding: 5px;
+
+    border-radius: 15px;
+    border: none;
+
+    width: 30%;
+    background-color: #ffe9b1;
+    font-weight: bold;
+
 }
 
 .search-input input{
@@ -41,6 +59,10 @@ body{
 
 .search-input.active input{
     border-radius: 5px 5px 0 0;
+}
+
+#search-button:hover{
+    background-color: rgba(211, 211, 211, 0.49);
 }
 
 .search-input .autocom-box{
@@ -84,4 +106,8 @@ body{
     font-size: 20px;
     color: #644bff;
     cursor: pointer;
+}
+
+#search-button{
+    background-color: lightgrey;
 }
