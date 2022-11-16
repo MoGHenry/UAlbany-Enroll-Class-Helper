@@ -92,6 +92,10 @@ public void sent (ClassDatatype course) throws SQLException {
 	//import and construct all course info
 	String temporary=course.getCourseInfo();
 	int index=temporary.indexOf(" ");
+	if(index==0) {
+	temporary=temporary.substring(index+1);
+	index=temporary.indexOf(" ");
+	}
 	courseSubject = temporary.substring(0, index);//1
 	temporary=temporary.substring(index+1);
 	index=temporary.indexOf(" ");
@@ -109,6 +113,7 @@ public void sent (ClassDatatype course) throws SQLException {
 	int index2=temporary.lastIndexOf("PM");
 	index=Math.max(index, index2);
 	meetingTime = temporary.substring(0,index+2);//7
+	meetingTime=meetingTime.replace(" ","");
 	meetingLocation = temporary.substring(index+3);//8
 	
 	preRequest = course.getComments();//9
@@ -272,7 +277,7 @@ public void closeConnecter() throws SQLException {
 
 
 
-//test use code storage here
+//test use code storage
 /*
 
 	System.out.println(courseSubject);
