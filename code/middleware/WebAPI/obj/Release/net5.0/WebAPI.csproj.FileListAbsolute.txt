@@ -133,3 +133,11 @@ D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\refi
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\WebAPI.pdb
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\WebAPI.genruntimeconfig.cache
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\ref\WebAPI.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\Google.Protobuf.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\K4os.Compression.LZ4.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\K4os.Compression.LZ4.Streams.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\K4os.Hash.xxHash.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\MySql.Data.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\ZstdNet.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\MySqlConnector.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\bin\Release\net5.0\BouncyCastle.Crypto.dll

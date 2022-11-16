@@ -4,7 +4,11 @@ D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubT
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\WebAPI.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\WebAPI.runtimeconfig.json
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\WebAPI.pdb
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Google.Protobuf.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Humanizer.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\K4os.Compression.LZ4.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\K4os.Compression.LZ4.Streams.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\K4os.Hash.xxHash.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Razor.Language.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Microsoft.CodeAnalysis.dll
@@ -34,7 +38,11 @@ D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubT
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\MySql.Data.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\ZstdNet.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\MySqlConnector.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\BouncyCastle.Crypto.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\cs\UAlbany-Enroll-Class-Helper\code\middleware\WebAPI\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
