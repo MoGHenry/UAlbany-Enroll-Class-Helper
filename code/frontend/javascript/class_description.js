@@ -1,11 +1,10 @@
-
-function show_description(id)
+function show_description(course_id)
 {
-    const val = id_description[id];
+    const course_description = search_result[course_id];
     addModal();
 
     let modal = document.getElementsByClassName('modal')[0];
-    modal.id = id;
+    modal.id = course_id;
 
     const btn_close_1 = document.getElementById('btn-close-1');
     const btn_close_2 = document.getElementById('btn-close-2');
@@ -25,22 +24,35 @@ function show_description(id)
 
     // TODO add message box when add or remove class
     btn_remove.onclick = function (){
-        if(id in localStorage) {
-            localStorage.removeItem(id);
+        let deleteFlag = false;
+        if(course_id in selected_class_with_time) {
+            delete selected_class_with_time[course_id];
+            delete selected_class_with_description[course_id];
+            deleteFlag = true;
+        }
+        if(deleteFlag){
             alert("Remove successful");
+            localStorage.removeItem('selected_class_with_time');
+            localStorage.removeItem('selected_class_with_description');
         }
         else
             alert("This class is not in your cart");
+
     }
     btn_add.onclick = function (){
-        if(!(id in localStorage)) {
-            localStorage.setItem(id, JSON.stringify(val));
-            console.log(localStorage.key(0));
-            alert("Add Successful");
+        let addFlag = false;
+        if(!(course_id in selected_class_with_time)) {
+            selected_class_with_time[course_id]=analyzeTime(search_result[course_id]);
+            selected_class_with_description[course_id]=course_description;
+            addFlag = true;
         }
-        else{
-            alert('You have already added this class to the Cart');
+        if(addFlag){
+            alert("add successful");
+            localStorage.setItem('selected_class_with_description',JSON.stringify(selected_class_with_description));
+            localStorage.setItem('selected_class_with_time',JSON.stringify(selected_class_with_time));
         }
+        else
+            alert("This class is already in your cart");
     }
 }
 
