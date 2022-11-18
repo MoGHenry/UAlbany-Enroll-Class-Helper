@@ -1,7 +1,7 @@
-function analyzeTime(data)
+function analyzeTime(data,title,id)
 {
-    alert("start analyze time");
-    let output =  {week: '',time:''};
+    // alert("start analyze time");
+    let output =  {week: '',time:'',timeSession:'',courseTitle:'',courseID:''};
     let timeJson = data.meetingTime;
     timeJson = timeJson.replace(/([A-Z])(\d)/g, '$1 $2');
     // timeJson = 'TTH 04:30_PM-05:50_PM';
@@ -23,7 +23,10 @@ function analyzeTime(data)
     {
         end_time = end_time*1 + 1200;
     }
-    output.time = 'time-'+ start_time + ' / time-' + end_time;
+    output.timeSession = 'time-'+ start_time + ' / time-' + end_time;
+    output.time = timeJson;
+    output.courseTitle = title;
+    output.courseID = id;
 
     output.week = [];
     if (week.indexOf('M') !== -1)

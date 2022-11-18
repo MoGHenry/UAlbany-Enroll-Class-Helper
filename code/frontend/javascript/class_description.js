@@ -42,7 +42,7 @@ function show_description(course_id)
     btn_add.onclick = function (){
         let addFlag = false;
         if(!(course_id in selected_class_with_time)) {
-            selected_class_with_time[course_id]=analyzeTime(search_result[course_id]);
+            selected_class_with_time[course_id]=analyzeTime(search_result[course_id], course_description.courseInfo, course_id);
             selected_class_with_description[course_id]=course_description;
             addFlag = true;
         }

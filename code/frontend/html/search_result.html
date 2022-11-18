@@ -30,17 +30,17 @@
 <script type="text/javascript">
     let search_result = {};
     let json = '';
-    let selected_class_with_description = {'empty': 'null'};
-    let selected_class_with_time = {'empty': 'null'};
+    let selected_class_with_description;
+    let selected_class_with_time;
 
     if('selected_class_with_description' in localStorage)
         selected_class_with_description = JSON.parse(localStorage.getItem("selected_class_with_description"));
     else
-        selected_class_with_description = {'empty': 'null'};
+        selected_class_with_description = {};
     if('selected_class_with_time' in localStorage)
         selected_class_with_time = JSON.parse(localStorage.getItem("selected_class_with_time"));
     else
-        selected_class_with_time = {'empty': 'null'};
+        selected_class_with_time = {};
 </script>
 <script type="text/javascript" src="../javascript/classAnalyze.js"></script>
 <script type="text/javascript" src="../javascript/class_description.js"></script>
