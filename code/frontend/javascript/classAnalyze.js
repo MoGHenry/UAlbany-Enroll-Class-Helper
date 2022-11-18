@@ -3,12 +3,12 @@ function analyzeTime(data)
     alert("start analyze time");
     let output =  {week: '',time:''};
     let timeJson = data.meetingTime;
+    timeJson = timeJson.replace(/([A-Z])(\d)/g, '$1 $2');
     // timeJson = 'TTH 04:30_PM-05:50_PM';
     let time_array = timeJson.split(' ');
     let week = time_array[0];
     let hours = time_array[1];
     let hours_array = hours.split("-");
-    console.log("start and end");
     let start_hour = hours_array[0];
     let end_hour = hours_array[1];
     start_hour = start_hour.replace(':','');
@@ -56,21 +56,25 @@ function analyzeTime(data)
 
 function mergeClassTimes(data)
 {
-    let output={};
-    let output_value = [];
-    output.id = data.id;
-    output.number = data.number;
+    let output=[];
+    // output.id = data.id;
+    // output.number = data.number;
     let value = data.value;
     let courseList = JSON.parse(value);
     for(let i=0; i<courseList.length; i++)
     {
         let course = courseList[i];
-        if(output_value.some(e => e.courseInfo === course.courseInfo))
+        if(!output.includes(course.courseInfo))
         {
-
+            output.push(course.courseInfo);
         }
-
+        else {
+            courseList.splice(i, 1);
+            i = i-1;
+        }
     }
+    data.value = JSON.stringify(courseList);
+    return data;
 }
 
 // function analyzeTime()

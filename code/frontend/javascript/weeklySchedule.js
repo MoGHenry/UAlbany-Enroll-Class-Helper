@@ -6,7 +6,7 @@
 //     <span className="session-presenter">Presenter</span>
 // </div>
 
-let classList = localStorage;
+let classList = localStorage.getItem('selected_class_with_time');
 for(let i=0;i<classList.length;i++)
 {
     let class_val = classList.getItem(classList.key(i));
@@ -18,6 +18,4 @@ for(let i=0;i<classList.length;i++)
         '    <span class="session-location">Earth Science 245</span>\n' +
         '    <span class="session-presenter">Presenter</span>\n' +
         '  </div>';
-
-
 }

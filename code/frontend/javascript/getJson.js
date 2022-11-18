@@ -3,7 +3,9 @@ function getJson(url) {
     fetch(url)
     .then((response) => response.json())
     .then((data) => {
-        // data = mergeClassTimes(data);
+        // alert(JSON.stringify(data))
+        data = mergeClassTimes(data);
+        // alert(JSON.stringify(data))
         addClassDiv(data);});
 }
 // offline test mode
