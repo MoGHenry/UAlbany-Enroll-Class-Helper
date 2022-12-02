@@ -1,0 +1,12 @@
+
+.uabr_devenv_header {
+	display: none;
+	height: 1em;
+	width: 100%;
+	background-color: #eeb211;
+	color: #46166b;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
