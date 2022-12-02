@@ -56,7 +56,7 @@ This part is the backend of the UAlbany-Enroll-Class-Helper, which handle with d
   - If not work, please try set the script as runnable `$sudo chmod o+x RunScript.sh`
 - note : the MYSQL server address and information is hardcode in the Java file, it may close and java would throw the error with server not found. If you have you own MYSQL server, please check and update the **src/Connecter.java** file.
 
-### Run Auto 
+#### Run Auto 
 - we has using the **Crontab** function on ubuntu to trigger this script automatically
 - to do that please use `$crontab -e`
 - and then input ` 0 * * * * cd /'the file local'/UAlbany-Enroll-Class-Helper/code/script/;sudo ./RunScript`
