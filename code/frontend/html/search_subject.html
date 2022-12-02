@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Search Subject</title>
+    <link rel="icon" type="image/x-icon" href="../../../code/frontend/Pic/favicon.ico">
+    <link rel="stylesheet" href="../css/search_subject.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script>
+        let ICSI = "Computer Science";
+        let APHY = "Physics";
+        let AMAT = "Mathmatics"
+        let ACHM = "Chemistry";
+        let BBUS = "Business";
+        let ACOM = "Communication";
+        let AECO = "Economics";
+        let IECE = "Electrical & Computer Engineering";
+        let AENG = "English";
+        let AHIS = "History";
+    </script>
+</head>
+<body>
+
+<header id="header"></header>
+<script src="../javascript/navbar.js"></script>
+
+
+<div class="wrapper">
+    <div class="search-input">
+        <form action="./search_result.html" method="get" target="_blank">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder='Enter "subject" here..' id="placeholder">
+            <div class="autocom-box">
+                <!-- JS inserts list here -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+            <input type="submit" value="search" id="search-button">
+        </form>
+
+        <div class="autocom-box">
+            <!-- JS inserts list here -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+    </div>
+
+    <div class="top-searches">
+        <!--    TODO show a list of hot search by record the search times-->
+        <input type="button" onclick="" value="" id = "button1">
+        <input type="button" onclick="" value="" id = "button2">
+        <input type="button" onclick="" value="" id = "button3">
+        <input type="button" onclick="" value="" id = "button4">
+        <input type="button" onclick="" value="" id = "button5">
+        <input type="button" onclick="" value="" id = "button6">
+        <input type="button" onclick="" value="" id = "button7">
+        <input type="button" onclick="" value="" id = "button8">
+        <input type="button" onclick="" value="" id = "button9">
+        <script >
+            document.getElementById("button1").value = ICSI;
+            document.getElementById("button2").value = APHY;
+            document.getElementById("button3").value = AMAT;
+            document.getElementById("button4").value = ACHM;
+            document.getElementById("button5").value = BBUS;
+            document.getElementById("button6").value = ACOM;
+            document.getElementById("button7").value = AECO;
+            document.getElementById("button8").value = IECE;
+            document.getElementById("button9").value = AENG;
+        </script>
+    </div>
+
+</div>
+
+<div id="advance-search-div" style="margin: auto; width: 30%;/*border: 5px solid #FFFF00;*/padding: 10px;">
+<div class="advance-search-button" style="text-align: center;">
+    <button type="button" class="or-line">Advanced Search</button>
+</div>
+<div class="advance-search" style="display: none; align-content: center;border: 3px solid #FFFF00; padding: 10px;">
+    <form>
+        <div>
+            <label for="meeting-start-time">Meeting Start Time</label>
+            <select>
+                <option value = "Greater">> Greater Than</option>
+                <option value = "Less">< Less Than</option>
+                <option value = "Equal">= Equal</option>
+                <option value = "Between"><> Between</option>
+                <option value = "Not-in">>< Not In</option>
+            </select>
+            <input type="time" value="" id="meeting-start-time">
+        </div>
+        <div>
+            <label for="meeting-end-time">Meeting End Time</label>
+            <select>
+                <option value = "Greater">> Greater Than</option>
+                <option value = "Less">< Less Than</option>
+                <option value = "Equal">= Equal</option>
+                <option value = "Between"><> Between</option>
+                <option value = "Not-in">>< Not In</option>
+            </select>
+            <input type="time" value="" id="meeting-end-time">
+        </div>
+        <div>
+            <label>Days of Week</label>
+            <div>
+                <input type="checkbox" id="Monday">
+                <label for="Monday">Monday</label>
+                <input type="checkbox" id="Tuesday">
+                <label for="Tuesday">Tuesday</label>
+                <input type="checkbox" id="Wednesday">
+                <label for="Wednesday">Wednesday</label>
+                <input type="checkbox" id="Thursday">
+                <label for="Thursday">Thursday</label>
+                <input type="checkbox" id="Friday">
+                <label for="Friday">Friday</label>
+                <input type="checkbox" id="Saturday">
+                <label for="Saturday">Saturday</label>
+                <input type="checkbox" id="Sunday">
+                <label for="Sunday">Sunday</label>
+            </div>
+        </div>
+        <div>
+            <label for="instructor-last-name">Instructor Last Name</label>
+            <select>
+                <option>begins with</option>
+                <option>contains</option>
+                <option>is exactly</option>
+            </select>
+            <input type="text" value="" id="instructor-last-name">
+        </div>
+<!--        TODO instruction for what's Class Number. If on focus for too long show the dialog to explain it-->
+        <div>
+            <label for="class-number">Class Number</label>
+            <input type="text" value="" id="class-number">
+        </div>
+<!--        TODO What's Course Keyword-->
+<!--        <div>-->
+<!--            <label for="">Course Keyword</label>-->
+<!--            <input type="" value="" id="">-->
+<!--        </div>-->
+        <div>
+            <label for="minimum-units">Minimum Units</label>
+            <select>
+                <option value = "Greater">> Greater Than</option>
+                <option value = "Less">< Less Than</option>
+                <option value = "Equal">= Equal</option>
+                <option value = "Between"><> Between</option>
+                <option value = "Not-in">>< Not In</option>
+            </select>
+            <input type="text" value="" id="minimum-units">
+        </div>
+        <div>
+            <label for="maximum-units">Maximum Units</label>
+            <select>
+                <option value = "Greater">> Greater Than</option>
+                <option value = "Less">< Less Than</option>
+                <option value = "Equal">= Equal</option>
+                <option value = "Between"><> Between</option>
+                <option value = "Not-in">>< Not In</option>
+            </select>
+            <input type="text" value="" id="maximum-units">
+        </div>
+        <div>
+            <label>Course Component</label>
+            <select>
+                <option value="" selected="selected">&nbsp; </option>
+                <option value = "Greater">Discussion</option>
+                <option value = "Independent-Study">Independent Study</option>
+                <option value = "Laboratory">Laboratory</option>
+                <option value = "Lecture">Lecture</option>
+                <option value = "Practicum-Field-or-Clinical-Exp">Practicum,Field, or Clinical Exp</option>
+                <option value = "Research">Research</option>
+                <option value = "Seminar">Seminar</option>
+                <option value = "Thesis-Research">Thesis Research</option>
+                <option value = "Tutorial">Tutorial</option>
+            </select>
+        </div>
+        <div>
+            <label>Session</label>
+            <select>
+                <option value="" selected="selected">&nbsp; </option>
+                <option value="10W">10 Week</option>
+                <option value="HFL">20 Week Fall</option>
+                <option value="HSG">20 Week Spring</option>
+                <option value="HYR">40 Week School Year</option>
+                <option value="HSR">8 Week Summer</option>
+                <option value="8W1">Eight Week - First</option>
+                <option value="8W2">Eight Week - Second</option>
+                <option value="4W1">Four Week - First</option>
+                <option value="4W4">Four Week - Fourth</option>
+                <option value="4W2">Four Week - Second</option>
+                <option value="4W3">Four Week - Third</option>
+                <option value="FYR">Full Year</option>
+                <option value="A13">Medical Pd 1, 12 Weeks</option>
+                <option value="A11">Medical Period 1, 4 Weeks</option>
+                <option value="A12">Medical Period 1, 8 Weeks</option>
+                <option value="A23">Medical Period 2, 12 Week</option>
+                <option value="A21">Medical Period 2, 4 Weeks</option>
+                <option value="A22">Medical Period 2, 8 Weeks</option>
+                <option value="MIN">Mini Session</option>
+                <option value="OEE">Open Entry/Open Exit</option>
+                <option value="SM1">Semester 1</option>
+                <option value="SM2">Semester 2</option>
+                <option value="1">Semester Length</option>
+                <option value="6W1">Six Week - First</option>
+                <option value="6W4">Six Week - Fourth</option>
+                <option value="6W2">Six Week - Second</option>
+                <option value="6W3">Six Week - Third</option>
+                <option value="12W">Twelve Week</option>
+                <option value="WR">Winter Regular</option>
+            </select>
+        </div>
+        <div>
+            <label>Mode of Instruction</label>
+            <select>
+                <option value="" selected="selected">&nbsp; </option>
+                <option value="Closed-Circuit-TV">Closed Circuit TV</option>
+                <option value="Correspondence">Correspondence</option>
+                <option value="Directed-Research">Directed Research</option>
+                <option value="In-Person">In Person</option>
+                <option value="Independent-Studies">Independent Studies</option>
+                <option value="Television">Television</option>
+                <option value="VideotapeV">Videotape</option>
+                <option value="World-Wide-Web">World Wide Web</option>
+            </select>
+        </div>
+        <div>
+            <label>Campus</label>
+            <select>
+                <option value="University-At-Albany">University at Albany</option>
+            </select>
+        </div>
+        <div>
+            <label>Location</label>
+            <select>
+                <option value="" selected="selected">&nbsp; </option>
+                <option value="Albany-Campus">Albany Campus</option>
+                <option value="Arranged">Arranged</option>
+                <option value="Downtown-Albany-Campus">Downtown Albany Campus</option>
+                <option value="ETEC">ETEC</option>
+                <option value="Health-Sciences-Campus">Health Sciences Campus</option>
+                <option value="Off-Campus">Off Campus</option>
+                <option value="Online">Online</option>
+                <option value="Uptown-Albany-Campus">Uptown Albany Campus</option>
+            </select>
+        </div>
+    </form>
+</div>
+</div>
+
+<script src="../javascript/suggestions.js"></script>
+<script src="../javascript/search_bar_script.js"></script>
+<script type="text/javascript">
+    document.getElementsByClassName('advance-search-button')[0].onclick = function(){
+        if(document.getElementsByClassName('advance-search')[0].style.display==="none")
+            document.getElementsByClassName('advance-search')[0].style.display="block";
+        else
+            document.getElementsByClassName('advance-search')[0].style.display="none";
+    }
+</script>
+
+</body>
+</html>

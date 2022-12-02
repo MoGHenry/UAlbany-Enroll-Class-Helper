@@ -1,0 +1,323 @@
+/*************************
+* GRID SCHEDULE LAYOUT
+*************************/
+
+
+
+
+@media screen and (min-width: 700px) {
+    .schedule {
+        display: grid;
+        grid-gap: 0.15em;
+        grid-template-rows:
+    [tracks] auto
+
+
+    /*[time-0800] 0.3fr*/
+    /*[time-0830] 0.3fr*/
+    /*[time-0900] 0.3fr*/
+    /*[time-0930] 0.3fr*/
+    /*[time-1000] 0.3fr*/
+    /*[time-1030] 0.3fr*/
+    /*[time-1100] 0.3fr*/
+    /*[time-1130] 0.3fr*/
+    /*[time-1200] 0.3fr*/
+    /*[time-1230] 0.3fr*/
+    /*[time-1300] 0.3fr*/
+    /*[time-1330] 0.3fr*/
+    /*[time-1400] 0.3fr*/
+    /*[time-1430] 0.3fr*/
+    /*[time-1500] 0.3fr*/
+    /*[time-1530] 0.3fr*/
+    /*[time-1600] 0.3fr*/
+    /*[time-1630] 0.3fr*/
+
+
+    [time-0800] 1%
+    [time-0805] 1%
+    [time-0810] 1%
+    [time-0815] 1%
+    [time-0820] 1%
+    [time-0825] 1%
+    [time-0830] 1%
+    [time-0835] 1%
+    [time-0840] 1%
+    [time-0845] 1%
+    [time-0850] 1%
+    [time-0855] 1%
+    [time-0900] 1%
+    [time-0905] 1%
+    [time-0910] 1%
+    [time-0915] 1%
+    [time-0920] 1%
+    [time-0925] 1%
+    [time-0930] 1%
+    [time-0935] 1%
+    [time-0940] 1%
+    [time-0945] 1%
+    [time-0950] 1%
+    [time-0955] 1%
+    [time-1000] 1%
+    [time-1005] 1%
+    [time-1010] 1%
+    [time-1015] 1%
+    [time-1020] 1%
+    [time-1025] 1%
+    [time-1030] 1%
+    [time-1035] 1%
+    [time-1040] 1%
+    [time-1045] 1%
+    [time-1050] 1%
+    [time-1055] 1%
+    [time-1100] 1%
+    [time-1105] 1%
+    [time-1110] 1%
+    [time-1115] 1%
+    [time-1120] 1%
+    [time-1125] 1%
+    [time-1130] 1%
+    [time-1135] 1%
+    [time-1140] 1%
+    [time-1145] 1%
+    [time-1150] 1%
+    [time-1155] 1%
+    [time-1200] 1%
+    [time-1205] 1%
+    [time-1210] 1%
+    [time-1215] 1%
+    [time-1220] 1%
+    [time-1225] 1%
+    [time-1230] 1%
+    [time-1235] 1%
+    [time-1240] 1%
+    [time-1245] 1%
+    [time-1250] 1%
+    [time-1255] 1%
+    [time-1300] 1%
+    [time-1305] 1%
+    [time-1310] 1%
+    [time-1315] 1%
+    [time-1320] 1%
+    [time-1325] 1%
+    [time-1330] 1%
+    [time-1335] 1%
+    [time-1340] 1%
+    [time-1345] 1%
+    [time-1350] 1%
+    [time-1355] 1%
+    [time-1400] 1%
+    [time-1405] 1%
+    [time-1410] 1%
+    [time-1415] 1%
+    [time-1420] 1%
+    [time-1425] 1%
+    [time-1430] 1%
+    [time-1435] 1%
+    [time-1440] 1%
+    [time-1445] 1%
+    [time-1450] 1%
+    [time-1455] 1%
+    [time-1500] 1%
+    [time-1505] 1%
+    [time-1510] 1%
+    [time-1515] 1%
+    [time-1520] 1%
+    [time-1525] 1%
+    [time-1530] 1%
+    [time-1535] 1%
+    [time-1540] 1%
+    [time-1545] 1%
+    [time-1550] 1%
+    [time-1555] 1%
+    [time-1600] 1%
+    [time-1605] 1%
+    [time-1610] 1%
+    [time-1615] 1%
+    [time-1620] 1%
+    [time-1625] 1%
+    [time-1630] 1%
+    [time-1635] 1%
+    [time-1640] 1%
+    [time-1645] 1%
+    [time-1650] 1%
+    [time-1655] 1%
+
+
+
+
+    ;
+
+
+        /* Note 1:
+        Use 24hr time for gridlines names for simplicity
+
+        Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+        Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+        */
+
+        grid-template-columns:
+			[times] 4em
+			[track-1-start] 1fr
+			[track-1-end track-2-start] 1fr
+			[track-2-end track-3-start] 1fr
+			[track-3-end track-4-start] 1fr
+			[track-4-end track-5-start] 1fr
+			[track-5-end];
+    }
+}
+
+.time-slot {
+    grid-column: times;
+}
+
+.track-slot {
+    display: none; /* hidden on small screens and browsers without grid support */
+}
+
+@supports ( display:grid ) {
+    @media screen and (min-width: 700px) {
+        .track-slot {
+            display: block;
+            padding: 10px 5px 5px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, .9);
+        }
+    }
+}
+
+/* Small-screen & fallback styles */
+.session {
+    margin-bottom: 1em;
+}
+
+@supports ( display:grid ) {
+    @media screen and (min-width: 700px) {
+        .session {
+            margin: 0;
+        }
+    }
+}
+
+/*************************
+ * VISUAL STYLES
+ * Design-y stuff ot particularly important to the demo
+ *************************/
+body {
+    /*padding: 50px;*/
+    /*max-width: 1100px;*/
+    /*margin: 0 auto;*/
+    /*line-height: 1.5;*/
+}
+
+.session {
+    padding: .5em;
+    border-radius: 2px;
+    font-size: 14px;
+    box-shadow: rgba(255, 255, 255, .6) 1px 1px 0,
+    rgba(0, 0, 0, .3) 4px 4px 0;
+}
+
+.session-title,
+.session-type,
+.session-time,
+.session-location,
+.session-presenter {
+    display: block;
+}
+
+.session-title {
+    float:left;
+}
+
+.session-type{
+    text-align: right;
+}
+.session-title,
+.time-slot {
+    margin: 0;
+    font-size: 1em;
+}
+
+.session-title a {
+    color: #fff;
+    text-decoration-style: dotted;
+}
+.session-title:hover {
+    font-style: italic;
+}
+
+.session-title:focus {
+    outline: 2px dotted rgba(255, 255, 255, .8);
+}
+
+.track-slot,
+.time-slot {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.track-slot{
+    font-size: 1.75em;
+}
+
+.track-Monday {
+    background-color: #1259B2;
+    color: #fff;
+}
+
+.track-Tuesday {
+    background-color: #687f00;
+    color: #fff;
+}
+
+.track-Wednesday {
+    background-color: #544D69;
+    color: #fff;
+}
+
+.track-Thursday {
+    background-color: #c35500;
+    color: #fff;
+}
+
+.track-Friday {
+    background-color: #00c31a;
+    color: #fff;
+}
+
+.track-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    color: #000;
+    box-shadow: none;
+}
+
+.text {
+    max-width: 1100px;
+    font-size: 18px;
+    margin: 0 auto 0px;
+}
+
+.meta {
+    color: #555;
+    font-style: italic;
+}
+
+.meta a {
+    color: #555;
+}
+
+hr {
+    /*margin: 40px 0;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body{
+    zoom:0.75;
+    padding-top: 0px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../../../code/frontend/Pic/favicon.ico">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/innerSchedule.css">
+</head>
+<body>
+
+<header id="header" style="width: 100%"></header>
+<script src="../javascript/navbar.js"></script>
+
+<div class="split left">
+    <div class="schedule" aria-labelledby="schedule-heading">
+
+        <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Monday</span>
+        <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">Tuesday</span>
+        <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">Wednesday</span>
+        <span class="track-slot" aria-hidden="true" style="grid-column: track-4; grid-row: tracks;">Thursday</span>
+        <span class="track-slot" aria-hidden="true" style="grid-column: track-5; grid-row: tracks;">Friday</span>
+
+        <h2 class="time-slot" style="grid-row: time-0800;">8:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-0900;">9:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1000;">10:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1100;">11:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1200;">12:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1300;">13:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1400;">14:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1500;">15:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1600;">16:00am</h2>
+        <h2 class="time-slot" style="grid-row: time-1700;">17:00am</h2>
+
+        <div id="class-slot">
+            <!--  TODO js add class here  -->
+        </div>
+
+
+        <div class="session track-Tuesday" style="grid-column: track-2; grid-row: time-1500 / time-1620;">
+            <h3 class="session-title"><a href="#">ICSI 418Y</a></h3>
+            <span class="session-type">Lecture</span>
+            <span class="session-time">15:00-16:20</span>
+            <span class="session-location">Track: 2</span>
+            <span class="session-presenter">Presenter</span>
+        </div>
+
+
+        <div class="session track-Thursday" style="grid-column: track-4; grid-row: time-1500 / time-1620;">
+            <h3 class="session-title"><a href="#">ICSI 418Y</a></h3>
+            <span class="session-type">Lecture</span>
+            <span class="session-time">15:00-16:20</span>
+            <span class="session-location">Earth Science 245</span>
+            <span class="session-presenter">Presenter</span>
+        </div>
+
+    </div>
+</div>
+
+<div class="split right">
+    <div>
+        <button type="button" class="class-title-button-1">ICSI 418Y Software Engineering</button>
+        <div class="time-list-1">
+            <!--javascript add code here-->
+            <div>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="mandatory" name="drone" value="mandatory">
+                        <label for="mandatory">mandatory</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="optional" name="drone" value="optional" checked>
+                        <label for="optional">optional</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <input type="radio" id="time-1" name="other" value="time-1" checked>
+                        <label for="time-1">TTH 03:00_PM-04:20_PM</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div id="class-list">
+            <!--javascript add code here-->
+        </div>
+
+
+    </div>
+    <div id="save-change-div" style="display:block; position: absolute;bottom: 100px; left: 50px;">
+        <button type="submit" style="width: 300%; height: 50px;"> save</button>
+    </div>
+</div>
+<script type="text/javascript" src="../javascript/add_class_button_in_cart.js">
+    // add_class_button_in_cart();
+</script>
+<script>
+    // add_class_button_in_cart();
+</script>
+
+<script>
+    let div1 = document.getElementsByClassName('time-list-1')[0];
+    div1.style.display='block';
+    div1.onclick = function (){
+        if (div1.style.display==='block')
+            div1.style.display='none';
+        else
+            div1.style.display='block';
+    }
+</script>
+</body>
+</html>

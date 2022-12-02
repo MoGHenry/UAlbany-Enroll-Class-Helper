@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../../../code/frontend/Pic/favicon.ico">
+    <link rel="stylesheet" href="../css/class_description.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+<header id="header"></header>
+<script src="../javascript/navbar.js"></script>
+
+<h1> Search Result</h1>
+<div class="class-div" id="class-div">
+    <!--add_class_div_in_search_result.js add code here-->
+</div>
+
+
+<div class="class-description" id="class-description">
+    <!--class_description.js add code here-->
+</div>
+
+<script type="text/javascript">
+    let search_result = {};
+    let json = '';
+    let selected_class_with_description = {'empty': 'null'};
+    let selected_class_with_time = {'empty': 'null'};
+
+    if('selected_class_with_description' in localStorage)
+        selected_class_with_description = JSON.parse(localStorage.getItem("selected_class_with_description"));
+    else
+        selected_class_with_description = {'empty': 'null'};
+    if('selected_class_with_time' in localStorage)
+        selected_class_with_time = JSON.parse(localStorage.getItem("selected_class_with_time"));
+    else
+        selected_class_with_time = {'empty': 'null'};
+</script>
+<script type="text/javascript" src="../javascript/classAnalyze.js"></script>
+<script type="text/javascript" src="../javascript/class_description.js"></script>
+<script type="text/javascript" src="../javascript/add_class_div_in_search_result.js"></script>
+<script type="text/javascript" src="./../javascript/getJson.js"></script>
+
+<script type="text/javascript">
+    const url = 'https://webapi20221031145639.azurewebsites.net/api/todoitems';
+    getJson(url);
+</script>
+</body>
+</html>
