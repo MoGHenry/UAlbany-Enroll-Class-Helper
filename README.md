@@ -3,6 +3,48 @@ A user-friendly interface web application to help the UAlbany students enroll in
 
 
 
+## Component Description
+
+In this project, there are four components in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - presentation
   - what the team has done and what the team plan to done but not yet done
   - what the total team has done
