@@ -23,6 +23,7 @@ This part is the middleware of the UAlbany-Enroll-Class-Helper, which handle the
 ### Run/Compile Environment
 - ASP.NET Core 5.0
 - C# 7.0 or higher
+- dotnet MYSQL library (https://dev.mysql.com/downloads/connector/net/)
 - Visual Studio 2022
 ### Install and execute
 #### run local
