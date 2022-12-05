@@ -10,12 +10,18 @@ All the source code store in `UAlbany-Enroll-Class-Helper/code/` folder.
 
 
 ## Frontend
-This part is the web user interface for UAlbant students to search courses, plan their schedual, and print the schedual. 
+This is the User Interface Web of the UAlbany-Enroll-Class-Helper. It allow user to search courses, plan their schechle, and print the pdf as pdf.
 
 ### Run/Compile Environment
+- HTML5
+- CSS3
+- JavaScript ES5 / Vue
+- Ajax
 ### Install and execute
-
-
+#### run online
+The web is deploy on a github. Just follow the deploy tutorial on GitHub can done that.
+#### run local
+Same as any other html website, you can use Apache to depload this webpage
 
 ## Middleware
 This part is the middleware of the UAlbany-Enroll-Class-Helper, which handle the comminution between the frontend (user interface webpage) to the database. It private two type of Post method to access the course data in database
